@@ -29,11 +29,6 @@
 
         let cities = [
             {
-                name:"dumas"
-                lat:20.3974,
-                long:72.8328
-            },
-            {
                 name: "Surat",
                 lat: 21.1190193,
                 long: 72.9077824
@@ -54,6 +49,22 @@
             const marker = L.marker([city.lat, city.long]).addTo(map)
                 .bindPopup(city.name).openPopup();
         })
+
+
+
+// const popup = L.popup()
+// .setLatLng([51.513, -0.09])
+// .setContent('I am a standalone popup.')
+// .openOn(map);
+
+// function onMapClick(e) {
+// popup
+// .setLatLng(e.latlng)
+// .setContent(`You clicked the map at ${e.latlng.toString()}`)
+// .openOn(map);
+// }
+
+// map.on('click', onMapClick);
 
     </script>
 </body>
